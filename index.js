@@ -26,9 +26,10 @@ function setLikeStatus(dog, likeOrDislike) {
 
 function render() {
   document.querySelector("main").innerHTML = currentDog.getProfileHtml();
-  document.querySelector(
-    ".prospect"
-  ).style.backgroundImage = `${currentDog.avatar}`;
+  document.querySelector(".prospect").style.backgroundImage = `url(
+    ${currentDog.avatar}
+  )`;
+  console.log(`${currentDog.avatar}`);
 }
 
 let currentDog = getNewDog();
