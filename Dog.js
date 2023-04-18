@@ -24,14 +24,14 @@ class Dog {
   getProfileHtml() {
     const { name, avatar, age, bio, hasBeenSwiped, hasBeenLiked } = this;
     return `
-            <div id="prospect">
+            <div class="prospect">
                 ${this.getBannerHtml()}
                 <p class="prospect-info">${name}, ${age}</p>
                 <p class="prospect-bio">${bio}</p>
             </div>
             <div class="buttons">
-                <button class="button dislike-btn" data-like-or-dislike = 'dislike' >dislike</button>
-                <button class="button like-btn" data-like-or-dislike = 'like' >like</button>
+                <div class="button dislike-btn" data-like-or-dislike = 'dislike' ><img src="./images/icon-cross.png" /></div>
+                <div class="button like-btn" data-like-or-dislike = 'like' ><img src="./images/icon-heart.png" /></div>
             </div>
         `;
   }

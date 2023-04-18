@@ -1,0 +1,104 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 750px;
+  width: 100vw;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  margin: 0 auto;
+
+  width: 100%;
+  background: #ffffff;
+  padding: 1.25em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-img {
+  height: 34px;
+}
+
+.header-logo {
+  height: 42px;
+}
+
+main {
+  padding: 0 0.5em;
+  background: linear-gradient(#ffffff, #f6f7fb);
+  height: 100%;
+}
+
+.prospect {
+  width: 100%;
+  height: 125vw;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1em 1.25em;
+}
+
+.prospect-info,
+.prospect-bio {
+  text-shadow: 0 0 2px black;
+}
+
+.prospect-info {
+  color: #f8f8f8;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.prospect-bio {
+  color: #b7b7b7;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.buttons {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  gap: 1.5em;
+  padding: 1.5em;
+}
+
+.button {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  box-shadow: 0 10px 20px #e9e9ea;
+}
+
+.like-btn:hover,
+.like-btn:focus,
+.like-btn:active {
+  background-color: #dbfff4;
+  box-shadow: 0 10px 20px #ccf1e6;
+}
+
+.dislike-btn:hover,
+.dislike-btn:focus,
+.dislike-btn:active {
+  background-color: #ffe7ef;
+  box-shadow: 0 10px 20px #edd9df;
+}

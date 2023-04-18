@@ -26,8 +26,8 @@ function setLikeStatus(dog, likeOrDislike) {
 
 function render() {
   document.querySelector("main").innerHTML = currentDog.getProfileHtml();
-  document.getElementById(
-    "prospect"
+  document.querySelector(
+    ".prospect"
   ).style.backgroundImage = `url(${currentDog.avatar})`;
 }
 
@@ -35,7 +35,11 @@ let currentDog = getNewDog();
 render();
 
 document.addEventListener("click", function (e) {
+  console.log(e.target.parentElement);
   if (e.target.classList.contains("button")) {
     setLikeStatus(currentDog, e.target.dataset.likeOrDislike);
+  }
+  if (e.target.parentElement.classList.contains("button")) {
+    setLikeStatus(currentDog, e.target.parentElement.dataset.likeOrDislike);
   }
 });
