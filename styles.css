@@ -6,10 +6,17 @@
   padding: 0;
 }
 
+html {
+  border: 1px solid black;
+  height: 100vh;
+}
+
 body {
   margin: 0 auto;
   max-width: 750px;
   font-family: "Poppins", sans-serif;
+  height: 100%;
+  border: 1px solid red;
 }
 
 header {
