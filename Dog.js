@@ -5,9 +5,9 @@ class Dog {
 
   bannerSource() {
     if (this.hasBeenLiked) {
-      return "./images/badge-like.png";
+      return "badge-like.png";
     } else {
-      return "./images/badge-nope.png";
+      return "badge-nope.png";
     }
   }
   // <div class="banner"><img src="${this.bannerSource()}" /></div>
@@ -30,8 +30,8 @@ class Dog {
                 <p class="prospect-bio">${bio}</p>
             </div>
             <div class="buttons">
-                <div class="button dislike-btn" data-like-or-dislike = 'dislike' ><img src="./images/icon-cross.png" /></div>
-                <div class="button like-btn" data-like-or-dislike = 'like' ><img src="./images/icon-heart.png" /></div>
+                <div class="button dislike-btn" data-like-or-dislike = 'dislike' ><img src="icon-cross.png" /></div>
+                <div class="button like-btn" data-like-or-dislike = 'like' ><img src="icon-heart.png" /></div>
             </div>
         `;
   }
