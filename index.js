@@ -28,7 +28,7 @@ function render() {
   document.querySelector("main").innerHTML = currentDog.getProfileHtml();
   document.querySelector(
     ".prospect"
-  ).style.backgroundImage = `url(${currentDog.avatar})`;
+  ).style.backgroundImage = `${currentDog.avatar}`;
 }
 
 let currentDog = getNewDog();

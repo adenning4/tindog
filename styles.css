@@ -7,7 +7,6 @@
 }
 
 html {
-  border: 1px solid black;
   height: 100vh;
 }
 
@@ -16,7 +15,6 @@ body {
   max-width: 750px;
   font-family: "Poppins", sans-serif;
   height: 100%;
-  border: 1px solid red;
 }
 
 header {
