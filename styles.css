@@ -9,14 +9,10 @@
 body {
   margin: 0 auto;
   max-width: 750px;
-  width: 100vw;
   font-family: "Poppins", sans-serif;
 }
 
 header {
-  margin: 0 auto;
-
-  width: 100%;
   background: #ffffff;
   padding: 1.25em;
   display: flex;
@@ -36,12 +32,13 @@ header {
 main {
   padding: 0 0.5em;
   background: linear-gradient(#ffffff, #f6f7fb);
+  width: 100%;
   height: 100%;
 }
 
 .prospect {
-  width: 100%;
   height: 125vw;
+  max-height: 720px;
   background-size: cover;
   background-position: center;
   border-radius: 15px;
@@ -49,6 +46,7 @@ main {
   flex-direction: column;
   justify-content: flex-end;
   padding: 1em 1.25em;
+  position: relative;
 }
 
 .prospect-info,
@@ -87,6 +85,14 @@ main {
   justify-content: center;
   background: #ffffff;
   box-shadow: 0 10px 20px #e9e9ea;
+}
+.banner {
+  display: block;
+  width: 50vw;
+  max-width: 300px;
+  transform: rotateZ(-30deg);
+  position: absolute;
+  top: 8vh;
 }
 
 .like-btn:hover,

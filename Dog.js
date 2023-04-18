@@ -10,11 +10,11 @@ class Dog {
       return "./images/badge-nope.png";
     }
   }
-
+  // <div class="banner"><img src="${this.bannerSource()}" /></div>
   getBannerHtml() {
     if (this.hasBeenSwiped) {
       return `
-        <div class="banner"><img src="${this.bannerSource()}" /></div>
+        <img class='banner' src="${this.bannerSource()}" />
         `;
     } else {
       return ``;
